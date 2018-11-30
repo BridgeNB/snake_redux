@@ -1,0 +1,6 @@
+@import './minireset.min.css';
+
+@import './root.css';
+@import './general.css';
+@import '../components/Clock/clock.css';
+
