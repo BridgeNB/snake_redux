@@ -9,6 +9,11 @@
     --bg-color: #66b3ba;
     --bg-color-dk: #52a9b1;
 
+    --start-color:   #5ac923;
+    --restart-color:  #e8c537;
+    --pause-color:  -webkit-gradient(linear, left top, left bottom, from(#dc3333), to(#de0000));
+    --direction-color:  #E8970C;
+
     font-size: 100%;
     font-family: pixel-font;
 }

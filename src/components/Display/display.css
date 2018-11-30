@@ -1,0 +1,6 @@
+.display {
+    display: flex;
+    .show-area {
+        height: 100%;
+    }
+}

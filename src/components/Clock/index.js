@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 const format = num => (num < 10? `0${num}`.split(''): `${num}`.split(''));
 
-class Clock extends Component {
+export class Clock extends Component {
     constructor() {
         super();
         this.state = {
