@@ -39,8 +39,9 @@ class Clock extends Component {
         const sec  = now.getSeconds() % 2;
         const currentTime = hour.concat(sec ? 'd': 'd_c', min);
         return (
-            <div className="Clock">
-                {currentTime.map((e, k) => <span className={`background s_${e}`} key={k} />)}
+            <div className="clock">
+                <p>Time: </p>
+                {currentTime.map((e, k) => <span className={`bg s_${e}`} key={k} />)}
             </div>
         );
     }

@@ -1,4 +1,14 @@
+@font-face {
+    font-family: 'pixel-font';
+    src: url('./styles/resources/pixel_font.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --bg-color: #66b3ba;
     --bg-color-dk: #52a9b1;
+
+    font-size: 100%;
+    font-family: pixel-font;
 }
