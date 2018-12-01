@@ -6,13 +6,13 @@
 }
 
 :root {
-    --bg-color: #66b3ba;
-    --bg-color-dk: #52a9b1;
+    --bg-color: #f1b1a6;
+    --bg-color-dk: #38c6b1;
 
     --start-color:   #5ac923;
-    --restart-color:  #e8c537;
+    --restart-color:  #d6d2b7;
     --pause-color:  -webkit-gradient(linear, left top, left bottom, from(#dc3333), to(#de0000));
-    --direction-color:  #E8970C;
+    --direction-color:  #d1b578;
 
     font-size: 100%;
     font-family: pixel-font;

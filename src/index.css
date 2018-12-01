@@ -4,13 +4,13 @@
     font-weight: normal;
     font-style: normal;
 }:root {
-    --bg-color: #66b3ba;
-    --bg-color-dk: #52a9b1;
+    --bg-color: #f1b1a6;
+    --bg-color-dk: #38c6b1;
 
     --start-color:   #5ac923;
-    --restart-color:  #e8c537;
+    --restart-color:  #d6d2b7;
     --pause-color:  -webkit-gradient(linear, left top, left bottom, from(#dc3333), to(#de0000));
-    --direction-color:  #E8970C;
+    --direction-color:  #d1b578;
 
     font-size: 100%;
     font-family: pixel-font;
@@ -27,8 +27,12 @@
     }*:focus {
         outline: 0;
         outline-offset: 0;
-    }.App {
-    background: #66b3ba;
+    }body{ 
+    background: #f1b1a6; 
+    background: var(--bg-color);
+    height: 100%;
+}.App {
+    background: #f1b1a6;
     background: var(--bg-color);
     min-height: 100vh;
 
@@ -59,14 +63,16 @@
                 box-shadow: 0 5px 5px rgba(0, 0, 0, .6) inset;
             }.App .container {
         height: 100vh;
-        width:  500px;
+        width:  100vw;
         max-height: 800px;
-        background: #52a9b1;
+        max-width: 500px;
+        background: #38c6b1;
         background: var(--bg-color-dk);
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        border-radius: 10px;
     }.App .container .display {
             height: 70%;
         }.App .container .keyboard {
@@ -114,6 +120,7 @@
     }.keyboard {
     margin: 30px 30px 0 30px;
     display: flex;
+    align-content: space-between;
     padding-bottom: 20px;
 }.keyboard .left-console {
         flex: 1;
@@ -126,8 +133,10 @@
                 height: 100px;
                 background: #5ac923;
                 background: var(--start-color);
-                margin-top: 3rem;
-            }.keyboard .left-console .left-console-bottom ul {
+                margin-top: 10%;
+            }.keyboard .left-console .left-console-top button .fa {
+                    font-size: 1.5rem;
+                }.keyboard .left-console .left-console-bottom ul {
             display: flex;
             justify-content: space-around;
         }.keyboard .left-console .left-console-bottom ul li {
@@ -136,7 +145,7 @@
             }.keyboard .left-console .left-console-bottom ul li button {
                     width: 40px;
                     height: 40px;
-                    background: #e8c537;
+                    background: #d6d2b7;
                     background: var(--restart-color);
                 }.keyboard .left-console .left-console-bottom ul li:last-of-type button {
                         background: -webkit-gradient(linear, left top, left bottom, from(#dc3333), to(#de0000));
@@ -149,9 +158,11 @@
     }.keyboard .right-console button {
             width: 60px;
             height: 60px;
-            background: #E8970C;
+            background: #d1b578;
             background: var(--direction-color);
-        }.keyboard .right-console .top-button {
+        }.keyboard .right-console button .fa {
+                font-size: 2rem;
+            }.keyboard .right-console .top-button {
             display: flex;
             justify-content: center;
         }.keyboard .right-console .left-and-right ul {

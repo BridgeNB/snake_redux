@@ -1,6 +1,7 @@
 .keyboard {
     margin: 30px 30px 0 30px;
     display: flex;
+    align-content: space-between;
     padding-bottom: 20px;
     .left-console {
         flex: 1;
@@ -12,7 +13,10 @@
                 width: 100px;
                 height: 100px;
                 background: var(--start-color);
-                margin-top: 3rem;
+                margin-top: 10%;
+                .fa {
+                    font-size: 1.5rem;
+                }
             }   
         }
         .left-console-bottom ul {
@@ -43,6 +47,9 @@
             width: 60px;
             height: 60px;
             background: var(--direction-color);
+            .fa {
+                font-size: 2rem;
+            }
         }
         .top-button {
             display: flex;
