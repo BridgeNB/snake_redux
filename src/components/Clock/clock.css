@@ -2,8 +2,13 @@
     height: 24px;
     font-size: 14px;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     font-size: 1.3rem;
+    text-align: center;
+    .clock-number {
+        margin-left: 1rem;
+    }
     span {
         float: left;
         width: 14px;

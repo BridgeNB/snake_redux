@@ -1,0 +1,42 @@
+.App {
+    .cell {
+        width: 15px;
+        height: 15px;
+        padding: 1px;
+        border: 1px solid var(--cell-border-color);
+        margin: 0 1px 1px 0;
+        &:after {
+            content: "";
+            display: block;
+            width: 11px;
+            height: 11px;
+            background: var(--cell-border-color);
+            overflow: hidden;
+        }
+        .full-cell {
+            border-color: #000;
+            &:after {
+                background: #000;
+            }
+        }
+        .snake-cell, 
+        .food-o-cell {
+            position: absolute;
+            border-color: #000;
+            &:after {
+                background: #000;
+            }
+        }
+        .food-cell {
+            position: absolute;
+            border-color: 
+        }
+        .food-cell {
+            position: absolute;
+            border-color: var(--cell-border-color);
+            &:after {
+                background: var(--cell-border-color);  
+            }
+        }
+    }
+}

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from './Header';
 import Keyboard from './Keyboard';
 import Display from './Display';
 
@@ -9,6 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="container">
+          <Header />
           <Display />
           <Keyboard />
         </div>

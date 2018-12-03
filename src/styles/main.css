@@ -2,6 +2,12 @@
 
 @import './root.css';
 @import './general.css';
-@import '../components/Display/display.css';
+@import './utils/cell.css';
+
 @import '../components/Clock/clock.css';
 @import '../components/Keyboard/keyboard.css';
+
+@import '../components/Header/header.css';
+@import '../components/InfoDisplay/infodisplay.css';
+@import '../components/GameDisplay/gamedisplay.css';
+@import '../components/Display/display.css';

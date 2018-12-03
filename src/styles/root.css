@@ -7,12 +7,19 @@
 
 :root {
     --bg-color: #f1b1a6;
-    --bg-color-dk: #38c6b1;
+
+    --bg-console-color: #38c6b1;
+    --bg-console-color-dk: #2b9686;
 
     --start-color:   #5ac923;
     --restart-color:  #d6d2b7;
     --pause-color:  -webkit-gradient(linear, left top, left bottom, from(#dc3333), to(#de0000));
     --direction-color:  #d1b578;
+
+    --game-screen-bg-color: #9ead86;
+    --cell-border-color: #879372;
+    --cell-border-color-dk: #494536;
+
 
     font-size: 100%;
     font-family: pixel-font;

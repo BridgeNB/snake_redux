@@ -21,7 +21,6 @@ body{
     background: var(--bg-color);
     min-height: 100vh;
 
-
     .bg {
         background-image: url('./resources/images/source.png');
         background-repeat: no-repeat;
@@ -58,23 +57,35 @@ body{
     }
 
     .container {
-        height: 100vh;
-        width:  100vw;
-        max-height: 800px;
-        max-width: 500px;
-        background: var(--bg-color-dk);
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border-radius: 10px;
+        height: 100vh;
+        max-height: 800px;
+        width: 500px;
+        background: var(--bg-console-color);
+        box-shadow: inset 0 0 10px var(--bg-console-color-dk);
+        border-radius: 20px; 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         .display {
-            height: 70%;
+            height: 65%;
+            padding: 20px;
+            margin: 0 30px;
+            border: 5px solid #000;
         }
         .keyboard {
-            height: 30%;
+            height: 35%;
         }
     }
 
 }
-  
+
+@media screen and (min-width: 800px) {
+    .container {
+        margin-top: 10%;
+    }
+}

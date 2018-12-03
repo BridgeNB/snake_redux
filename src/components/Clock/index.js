@@ -40,8 +40,12 @@ export class Clock extends Component {
         const currentTime = hour.concat(sec ? 'd': 'd_c', min);
         return (
             <div className="clock">
-                <p>Time: </p>
-                {currentTime.map((e, k) => <span className={`bg s_${e}`} key={k} />)}
+                <div className="clock-tag">
+                    <p>Time: </p>
+                </div>
+                <div className="clock-number">
+                    {currentTime.map((e, k) => <span className={`bg s_${e}`} key={k} />)}
+                </div>
             </div>
         );
     }
